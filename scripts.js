@@ -1,13 +1,11 @@
-let nome = 'Worley';
-let idade = 37;
-let estaAprovado = true;
-let sobrenome = undefined;
 
-let pessoa = {
-    nome: 'Worley',
-    idade: 37,
-    estaAprovado: true,
-    sobrenome: 'Sacramento'
-};
-
-console.log(pessoa);
+let chart = new Chart(document.getElementById("lineChart"),{
+    type: 'bar',
+    data:{
+        labels:["Jan" , "Fev", "Mar" , "Abr" , "Mai" , "Jun"],
+        dataset:[{
+            label: '# of Sales',
+            data:[10,20,15,42,32,10]
+        }]
+    }
+})
