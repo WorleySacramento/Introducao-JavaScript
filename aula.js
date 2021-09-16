@@ -159,9 +159,61 @@
 // console.log('candidato recusado: ' ,candidatoRecusado);
 
 
-
-
-
-
-
 //Operadores Bitwise
+
+//comparação não booleana
+//Falsy
+    //undefined
+    //null
+    //0
+    //false
+    // ''
+    //NaN  -not a number
+
+//Truthy
+
+//let corPersonalizada = "";
+//let corPadrao = "azul";
+//let corPerfil = corPersonalizada || corPadrao;
+
+//console.log(corPerfil)
+
+
+//Trocando valores de Variáveis
+/* let a = 'vermelho';
+let b = 'azul';
+
+let c = a;
+a = b;
+b = c;
+
+console.log(a);
+console.log(b);
+ */
+
+
+// if.. Else
+// Se a Hora estiver entre 06:00 até 11:59 ;Bom Dia!
+// Se Estiver entre 12:00 até as 17:50 ;Boa Tarde!
+// caso contrário ;Boa noite!
+
+/* if (condicao) {
+    // codigo a ser executado
+}
+else if (outraCondicao) {
+    // codigo a ser executado
+}
+else {
+    // codigo a ser executado
+}
+ */
+
+
+
+
+
+
+
+
+
+// Switch .. case
