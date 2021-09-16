@@ -193,8 +193,8 @@ console.log(b);
 
 
 // if.. Else
-// Se a Hora estiver entre 06:00 até 11:59 ;Bom Dia!
-// Se Estiver entre 12:00 até as 17:50 ;Boa Tarde!
+// Se a Hora estiver entre 06:00 até 12:00 ;Bom Dia!
+// Se Estiver entre 12:00 até as 18:00 ;Boa Tarde!
 // caso contrário ;Boa noite!
 
 /* if (condicao) {
@@ -206,14 +206,182 @@ else if (outraCondicao) {
 else {
     // codigo a ser executado
 }
- */
+Exemplo
+let hora = 19;
 
+if (hora > 6 && hora < 12) {
+    // codigo a ser executado
+    console.log("Bom Dia!");
+}
 
+else if (hora > 12 && hora < 18) {
+    // codigo a ser executado
+  console.log("Boa Tarde!");
+}
 
+else {
+    //codigo a ser executado
+    console.log("Boa Noite!")
+}
 
-
-
+*/
 
 
 
 // Switch .. case
+
+/* let permissao; //comum, gerente, diretor
+
+permissao = ''
+
+switch (permissao) {
+    case 'comum':
+      console.log('usuário comum');
+      break;  
+
+      case 'gerente':
+      console.log('usuário gerente');
+      break;  
+
+      case 'diretor':
+      console.log('usuário diretor');
+      break;  
+
+      default:
+          console.log('Usuário não reconhecido');
+} */
+
+
+
+//esses laços fazem a mesma coisa em cenários diferentes
+
+    //for 
+/* for (let i = 1; i <= 10; i++) { //++ incremento -- decremento
+    if ( i % 2 !== 0){ // % operador modulos
+        console.log(i);
+    }
+} */
+
+
+
+    // while
+/* let i = 5;
+
+while (i >= 1) { 
+    if ( i % 2 !== 0){ 
+        console.log(i);
+    }
+    i--;
+} */
+
+
+    //Do..while
+/* let i = 0;
+
+do {
+    console.log('digitando',i);
+    i++;
+}while (i < 10 ) */
+
+
+
+    //for..in
+/* const pessoa = {
+    nome: 'Worley',
+    idade: 37
+};
+
+//key-value significa valor da chave
+for (let chave in pessoa){
+    console.log(chave,pessoa['nome']);
+}
+
+const cores = ['Vermelho', 'Azul','Verde'];
+
+for (let indice in cores) {
+    console.log(indice,cores[indice])
+} */
+
+
+
+    //for..of
+/* const cores = ['Vermelho', 'Azul','Verde'];
+
+for (let cor of cores){
+    console.log(cor);
+} */
+
+
+
+
+   //Maximo entre dois valores
+/* let valorMarior = max(8,89);
+console.log(valorMarior)
+function max(numero1,numero2) {
+    if(numero1 > numero2)
+    return numero1;
+    else return numero2;
+}
+
+ou esse metodo
+let valorMarior = max(8,89);
+console.log(valorMarior)
+function max(numero1,numero2) {
+   
+    return numero1 > numero2 ? numero1: numero2;
+    
+}
+
+
+*/
+
+        //FIZZBUZZ
+        //Divisivel por 3 => Fizz
+//Divisivel por 5 => Buzz
+//Divisivel por 3 e 5 => FizzBuzz
+//Não Divisivel por 3 e 5 => retorna o mesmo valor
+//Não for um numero => 'Não é um número
+/* const resultado = fizzBuzz(13);
+console.log(resultado);
+
+function fizzBuzz(entrada){
+    if (typeof entrada !== 'number')
+        return 'Não é um número';
+    if(( entrada % 3 === 0) && (entrada % 5 === 0))
+        return 'FizzBuzz';    
+    if(entrada % 3 === 0)
+        return 'Fizz';
+    if(entrada % 5 === 0)
+        return 'Buzz';   //Divisão %, igual ===, e &&, Diferente !==
+   
+    return entrada;  
+    
+}; */
+
+        //Medidor de velocidade
+        // Velocidade maxima de 70
+// a cada 5Km acima do limite vc ganha 1 ponto
+//math.floor()
+//caso pontos seja maior que 12 ->< 'Carteira Suspensa'
+/* verificarVelocidade(120);
+
+
+function verificarVelocidade(velocidade) {
+    const velocidademaxima = 70;
+    const kmPorPonto = 5;
+    if(velocidade <= velocidademaxima)
+        console.log('Ok');
+    else{
+       const pontos = Math.floor (((velocidade - velocidademaxima) / kmPorPonto));
+       if(pontos >= 12)
+        console.log('Carteira Suspensa');
+        else
+        console.log('Pontos',pontos);
+    }
+} */
+
+
+
+
+
+        
