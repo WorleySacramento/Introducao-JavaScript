@@ -1,20 +1,12 @@
-// Velocidade maxima de 70
-// a cada 5Km acima do limite vc ganha 1 ponto
-//math.floor()
-//caso pontos seja maior que 12 ->< 'Carteira Suspensa'
-verificarVelocidade(120);
+// Receber uma quantidade de valores para avaliar
+// Função que exibe se cada valor é par ou impar
 
-
-function verificarVelocidade(velocidade) {
-    const velocidademaxima = 70;
-    const kmPorPonto = 5;
-    if(velocidade <= velocidademaxima)
-        console.log('Ok');
-    else{
-       const pontos = Math.floor (((velocidade - velocidademaxima) / kmPorPonto));
-       if(pontos >= 12)
-        console.log('Carteira Suspensa');
+exibirTipo(6)
+function exibirTipo(limite) {
+    for(let i = 0; i <= limite; i++){
+        if(i % 2 === 0)
+            console.log(i,'PAR');
         else
-        console.log('Pontos',pontos);
+            console.log(i,'Impar')    
     }
 }
